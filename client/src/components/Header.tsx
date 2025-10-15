@@ -2,8 +2,10 @@ import { ShoppingCart, Bell, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import { useLocation } from "wouter";
 
 export default function Header() {
+  const [, setLocation] = useLocation();
   const [cartCount, setCartCount] = useState(2); //todo: remove mock functionality
 
   return (
@@ -41,7 +43,7 @@ export default function Header() {
               size="icon"
               className="relative text-primary-foreground hover:bg-primary-foreground/10"
               data-testid="button-cart"
-              onClick={() => console.log('Cart clicked')}
+              onClick={() => setLocation('/cart')}
             >
               <ShoppingCart className="h-5 w-5" />
               {cartCount > 0 && (
