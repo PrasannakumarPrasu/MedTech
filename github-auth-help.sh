@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# 🔑 GitHub Authentication Helper Script
+echo "🔑 GitHub Authentication Helper"
+echo "==============================="
+echo ""
+
+echo "🔒 GitHub no longer accepts passwords for Git operations."
+echo "You need to create a Personal Access Token (PAT)."
+echo ""
+
+echo "📋 Follow these steps:"
+echo ""
+echo "1️⃣  Go to GitHub Settings:"
+echo "   https://github.com/settings/tokens"
+echo ""
+echo "2️⃣  Click 'Generate new token' → 'Generate new token (classic)'"
+echo ""
+echo "3️⃣  Fill in the form:"
+echo "   • Note: 'WholesaleConnect Deploy'"
+echo "   • Expiration: Choose your preference (30 days, 90 days, etc.)"
+echo "   • Scopes: Check these boxes:"
+echo "     ✅ repo (Full control of private repositories)"
+echo "     ✅ workflow (Update GitHub Action workflows)"
+echo ""
+echo "4️⃣  Click 'Generate token'"
+echo ""
+echo "5️⃣  Copy the token (it starts with 'ghp_')"
+echo ""
+echo "6️⃣  When Git asks for credentials:"
+echo "   Username: PrasannakumarPrasu"
+echo "   Password: [paste your token here]"
+echo ""
+
+echo "🚀 Then run your git commands:"
+echo "   git add ."
+echo "   git commit -m 'Update setup script'"
+echo "   git push"
+echo ""
+
+echo "💡 Pro tip: After first successful push, Git will remember your token!"
+echo ""
+
+echo "🔗 Quick links:"
+echo "   • Token creation: https://github.com/settings/tokens"
+echo "   • Your repository: https://github.com/PrasannakumarPrasu/MedTech"
+echo ""
