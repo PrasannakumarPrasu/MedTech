@@ -1,38 +1,37 @@
 import { Card } from "@/components/ui/card";
-import { Upload, MapPin } from "lucide-react";
+import { GlassIcons } from "@/components/icons";
+import { useLocation } from "wouter";
 
 export default function QuickActions() {
+  const [, setLocation] = useLocation();
+
   return (
-    <div className="px-4 py-3 bg-background">
-      <div className="grid grid-cols-2 gap-3">
+    <div className="px-4 py-3">
+      <div className="grid grid-cols-2 gap-4">
         <Card 
-          className="p-4 hover-elevate active-elevate-2 cursor-pointer bg-accent/10 border-accent/20"
-          onClick={() => console.log('Upload prescription clicked')}
+          className="p-4 backdrop-blur-lg bg-white/80 border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-105"
+          onClick={() => setLocation('/upload')}
           data-testid="card-upload-prescription"
         >
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-              <Upload className="h-5 w-5 text-accent-foreground" />
-            </div>
+            <GlassIcons.Upload variant="accent" size="md" />
             <div className="flex-1">
-              <h3 className="font-semibold text-sm">Upload Rx</h3>
-              <p className="text-xs text-muted-foreground">Get medicines</p>
+              <h3 className="font-semibold text-sm text-gray-800">Upload Rx</h3>
+              <p className="text-xs text-gray-600">Get medicines</p>
             </div>
           </div>
         </Card>
 
         <Card 
-          className="p-4 hover-elevate active-elevate-2 cursor-pointer"
+          className="p-4 backdrop-blur-lg bg-white/80 border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-105"
           onClick={() => console.log('Check delivery clicked')}
           data-testid="card-check-delivery"
         >
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-              <MapPin className="h-5 w-5 text-primary" />
-            </div>
+            <GlassIcons.MapPin variant="primary" size="md" />
             <div className="flex-1">
-              <h3 className="font-semibold text-sm">Delivery</h3>
-              <p className="text-xs text-muted-foreground">Check pincode</p>
+              <h3 className="font-semibold text-sm text-gray-800">Delivery</h3>
+              <p className="text-xs text-gray-600">Check pincode</p>
             </div>
           </div>
         </Card>
