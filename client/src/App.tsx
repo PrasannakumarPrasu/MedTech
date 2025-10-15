@@ -9,6 +9,10 @@ import Account from "@/pages/Account";
 import Orders from "@/pages/Orders";
 import OrderDetail from "@/pages/OrderDetail";
 import Cart from "@/pages/Cart";
+import AdminDashboard from "@/pages/AdminDashboard";
+import AdminInventory from "@/pages/AdminInventory";
+import AdminUpdateStock from "@/pages/AdminUpdateStock";
+import AdminEditProduct from "@/pages/AdminEditProduct";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +24,10 @@ function Router() {
       <Route path="/orders" component={Orders} />
       <Route path="/order/:id" component={OrderDetail} />
       <Route path="/cart" component={Cart} />
+      <Route path="/admin/dashboard" component={AdminDashboard} />
+      <Route path="/admin/inventory" component={AdminInventory} />
+      <Route path="/admin/update-stock/:id" component={AdminUpdateStock} />
+      <Route path="/admin/edit-product/:id" component={AdminEditProduct} />
       <Route component={NotFound} />
     </Switch>
   );
