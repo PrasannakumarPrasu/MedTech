@@ -60,9 +60,9 @@
 
   --muted-foreground: 220 10% 50%;
 
-  --accent: 30 15% 94%;
+  --accent: 30 100% 50%;
 
-  --accent-foreground: 30 100% 25%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 45%;
 
@@ -178,9 +178,9 @@
 
   --muted-foreground: 220 10% 65%;
 
-  --accent: 30 12% 20%;
+  --accent: 30 95% 55%;
 
-  --accent-foreground: 30 95% 85%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 72% 50%;
 
@@ -241,6 +241,15 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
