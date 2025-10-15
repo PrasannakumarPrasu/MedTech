@@ -1,0 +1,43 @@
+Business Model & Revenue Generation
+•	Wholesale marketplace connecting manufacturers, distributors, pharmacies.
+•	Inventory and order management system.
+•	Subscription and procurement plans for steady supply.
+•	Credit and financing options for pharmacies.
+•	Analytics and value-added compliance services.
+
+Revenue Streams:
+•	Commission on transactions.
+•	Subscription fees.
+•	Listing and advertising fees.
+•	Payment gateway fees.
+•	Data and insights monetization.
+
+Phased Development Plan
+•	Phase 1: Research & Planning - Market study, competitor analysis, regulatory compliance review.
+•	Phase 2: Design & Prototyping - UI/UX wireframes, user journey mapping, stakeholder validation.
+•	Phase 3: Development MVP - Core features, vendor onboarding, payment integration, admin panel.
+•	Phase 4: Testing & Compliance - QA, security audits, pilot testing.
+•	Phase 5: Launch & Marketing - User acquisition, partnerships, customer support.
+•	Phase 6: Growth & Enhancements - Premium features, AI analytics, credit integration, scaling.
+
+Key Legal & Compliance Requirements
+•	Obtain Wholesale and/or Retail Drug Licenses as applicable.
+•	Register products with CDSCO or local regulators.
+•	Prescription validation and online pharmacy regulations compliance.
+•	Data privacy and security adherence.
+•	Vendor and KYC verification.
+•	Advertising restrictions and compliance.
+
+Starting Small Approach
+•	Build MVP with limited features and geography.
+•	Target niche product lines initially.
+•	Bootstrap or seek grants/incubators for early funding.
+•	Leverage partnerships instead of building all capabilities internal.
+•	Test market demand and iterate before scaling.
+
+B2C Generic Medicine App Overview
+•	End-user focused delivery of generic medicines.
+•	Features: product search, prescription uploads, order tracking, pharmacy chat support.
+•	Revenue via margin on sales, subscription plans, advertisements.
+•	Start local with verified suppliers and third-party logistics.
+•	Emphasize affordability and trust for user acquisition.
